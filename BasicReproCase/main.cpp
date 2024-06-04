@@ -97,7 +97,7 @@ int wmain()
     wprintf(L"\nCalls completed. Report:\n");
     // Prove we found something sensible by printing the magic sequence "MZ", if possible.
     wprintf(L"Official structure: %p -> MZ: \"%.2hs\"\n",
-            hModules[0], hModules[0] ? static_cast<char const *>(hModules[0]) : "\0");
+            hModules[0], hModules[0] ? static_cast<char const *>(hModules[0]) : "");
     wprintf(L"Working structure:  %p -> MZ: \"%.2hs\"\n",
-            hModules[1], hModules[1] ? static_cast<char const *>(hModules[1]) : "\0");
+            hModules[1], hModules[1] ? static_cast<char const *>(hModules[1]) : "");
 }
